@@ -1,9 +1,10 @@
 package array;
 
-public class HighArrayApp {
+public class Day2App {
+
     public static void main(String[] args) {
-        HighArray highArray;
-        highArray = new HighArray(100);
+        Day2ArrayAndBubbleSort highArray;
+        highArray = new Day2ArrayAndBubbleSort(100);
         highArray.insert(77);
         highArray.insert(99);
         highArray.insert(44);
@@ -19,15 +20,22 @@ public class HighArrayApp {
 
         int searchKey = 55;
         if (highArray.find(searchKey)) {
-            System.out.println("Found" + searchKey);
+            System.out.println("Found " + searchKey);
         } else {
             System.out.println("Can't find " + searchKey);
         }
 
+
+
 //        highArray.delete(00);
 //        highArray.delete(55);
 //        highArray.delete(99);
-        System.out.println(highArray.delete(55));
+        highArray.delete(88);
+        highArray.display();
+
+
+
+        highArray.sortBubble();
 
         highArray.display();
     }
