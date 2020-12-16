@@ -19,7 +19,7 @@ public class InsertSortApp {
         arr.insert(33);
 
         arr.display();
-        arr.insertSort();
+        arr.insSer();
         arr.display();
     }
 }

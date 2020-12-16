@@ -38,4 +38,49 @@ public class InsertSort {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    public void insSer() {
+        int out;
+        int in;
+
+
+        for (out = 1; out < nElems; out++) {
+            long tmp = a[out];
+            in = out;
+            while (in > 0 && a[in - 1] >= tmp) {
+                a[in] = a[in - 1];
+                in--;
+            }
+
+            a[in] = tmp;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
