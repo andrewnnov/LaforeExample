@@ -19,7 +19,7 @@ public class BubbleSortApp {
         arr.insert(33);
 
         arr.display();
-        arr.selectSort();
+        arr.selSorting();
         arr.display();
     }
 }

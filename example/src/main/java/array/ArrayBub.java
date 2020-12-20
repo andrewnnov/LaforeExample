@@ -65,4 +65,20 @@ public class ArrayBub {
             swap(out, min);
         }
     }
+
+
+    public void selSorting() {
+        int out;
+        int in;
+        int min;
+        for (out = 0; out < nElems - 1; out++) {
+            min = out;
+            for (in = out + 1; in < nElems; in++) {
+                if(a[in] < a[min]) {
+                    min = in;
+                }
+            }
+            swap(out, min);
+        }
+    }
 }
